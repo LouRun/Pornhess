@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pornhess – Vidéos interdites</title>
+  <style>
+    body {
+      background: #111;
+      color: #f08;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 2rem;
+    }
+    .video-container {
+      margin: 2rem auto;
+      width: 360px;
+      border: 10px dotted #f08;
+      padding: 0.5rem;
+    }
+    h2 { margin-top: 3rem; }
+    .fake-caption {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔒 Contenu ultra censuré (mais gentil)</h1>
+
+  <div class="video-container">
+    <iframe width="320" height="180"
+      src="https://www.youtube.com/embed/LXKllCQ9XXg"
+      title="La Famille Chat"
+      frameborder="0" allowfullscreen></iframe>
+    <div class="fake-caption">La Famille Chat (complètement scandaleux) 🐱</div>
+  </div>
+
+  <div class="video-container">
+    <iframe width="320" height="180"
+      src="https://www.youtube.com/embed/YWnOM-uMtvs"
+      title="Peppa Pig"
+      frameborder="0" allowfullscreen></iframe>
+    <div class="fake-caption">Peppa Pig – Compilation d'1 h (choc émotionnel) 🐷</div>
+  </div>
+
+  <div class="video-container">
+    <iframe width="320" height="180"
+      src="https://www.youtube.com/embed/9xnzJl5xbcQ"
+      title="T'choupi à l'école"
+      frameborder="0" allowfullscreen></iframe>
+    <div class="fake-caption">T'choupi à l'école – 1 h de folie 🏫</div>
+  </div>
+
+  <p style="margin-top:3rem;">© 2025 Pornhess – Site satirique. Aucun enfant n’a été traumatisé.</p>
+</body>
+</html>
