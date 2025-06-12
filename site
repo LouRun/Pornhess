@@ -1,0 +1,84 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cstdlib>
+
+using namespace std;
+
+void afficherSaisie() {
+    cout << "=============================================\n";
+    cout << "🚨 CE SITE A ÉTÉ SAISI PAR L'AUTORITÉ MORALE 🚨\n";
+    cout << "     Sous décret n°404 du Code de la Bienséance\n";
+    cout << "     Émis par le Ministère de l'éducation National\n";
+    cout << "=============================================\n\n";
+}
+
+void menuValidation() {
+    cout << "Veuillez confirmer votre âge (⚠️ obligatoire ⚠️)\n";
+    cout << "1 - Je suis mineur (accès total)\n";
+    cout << "2 - Je suis majeur (accès refusé)\n";
+    cout << "👉 Votre choix : ";
+}
+
+void afficherVidéosCensurées() {
+    struct Video {
+        string titre;
+        string lien;
+        string commentaire;
+    };
+
+    vector<Video> videos = {
+        {
+            "La Famille Chat – épisode interdit",
+            "https://www.youtube.com/watch?v=LXKllCQ9XXg",
+            "⚠️ Interdit pour cause de mignonnerie excessive"
+        },
+        {
+            "Peppa Pig – contenu troublant",
+            "https://www.youtube.com/watch?v=YWnOM-uMtvs",
+            "🧠 Jugé trop éducatif par les autorités satiriques"
+        },
+        {
+            "T'choupi à l'école – version non censurée",
+            "https://www.youtube.com/watch?v=9xnzJl5xbcQ",
+            "📚 Risque élevé d'envie de faire ses devoirs"
+        }
+    };
+
+    cout << "\n✅ ACCÈS AUTORISÉ – BIENVENUE SUR PORNHESS™\n";
+    cout << "Voici les vidéos censurées, classées top secret :\n\n";
+
+    for (const auto& v : videos) {
+        cout << "🎬 " << v.titre << endl;
+        cout << "🔗 " << v.lien << endl;
+        cout << "💬 " << v.commentaire << "\n\n";
+    }
+
+    cout << "📜 Mention légale : contenu classé « inoffensif » par erreur.\n";
+}
+
+void expulserMajeur() {
+    cout << "\n🚫 ACCÈS REFUSÉ\n";
+    cout << "Raison : votre maturité dépasse le seuil autorisé.\n";
+    cout << "Redirection automatique vers un site d’impôts...\n";
+    cout << "💸 https://www.impots.gouv.fr\n";
+}
+
+int main() {
+    afficherSaisie();
+
+    menuValidation();
+    int choix;
+    cin >> choix;
+
+    if (choix == 1) {
+        afficherVidéosCensurées();
+    } else if (choix == 2) {
+        expulserMajeur();
+    } else {
+        cout << "\nCommande inconnue. Vous êtes probablement un robot du Ministère.\n";
+    }
+
+    cout << "\n🪧 Ce logiciel est un produit de l’Absurdity International Corp.\n";
+    return 0;
+}
